@@ -95,11 +95,11 @@ content="Private Bali tours, airport transfers, and custom travel experiences wi
             </div>
 
             <div class="contact-form">
-                <form>
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <input type="text" placeholder="Tour / Destination">
-                    <textarea placeholder="Tell us about your travel plan"></textarea>
+                <form id="contactForm">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <input type="text" id="tour" placeholder="Tour / Destination">
+                    <textarea id="message" placeholder="Tell us about your travel plan"></textarea>
 
                     <button type="submit">Send Inquiry</button>
                 </form>
@@ -136,6 +136,28 @@ content="Private Bali tours, airport transfers, and custom travel experiences wi
     <a href="https://wa.me/6281337780066" class="floating-whatsapp" target="_blank">
         WhatsApp
     </a>
+
+    <script>
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const tour = document.getElementById("tour").value;
+    const message = document.getElementById("message").value;
+
+    const phoneNumber = "6281337780066";
+
+    const whatsappMessage =
+        `Hello Ubud Odyssey,%0A%0A` +
+        `Name: ${name}%0A` +
+        `Email: ${email}%0A` +
+        `Tour / Destination: ${tour}%0A` +
+        `Travel Plan: ${message}`;
+
+    window.open(`https://wa.me/${phoneNumber}?text=${whatsappMessage}`, "_blank");
+});
+</script>
 
     <script src="js/script.js"></script>
 </body>
