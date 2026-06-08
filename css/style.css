@@ -225,6 +225,8 @@ nav{
     font-weight: 300;
 }
 
+
+
 /* =========================
    DESTINATIONS + TOURS PAGE
 ========================= */
@@ -278,6 +280,33 @@ nav{
     margin-top: 45px;
 }
 
+.why-us{
+    padding:100px 8%;
+    background:#f8f5f0;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.why-card{
+    background:#fff;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+
+.why-card h3{
+    color:#163521;
+    margin-bottom:15px;
+}
+
+.why-card p{
+    line-height:1.8;
+    color:#666;
+}
 
 /* =========================
    DESTINATION GRID
@@ -394,6 +423,24 @@ nav{
     color: #ffffff;
 }
 
+.gallery-section{
+    padding:100px 8%;
+    background:#fff;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    border-radius:20px;
+}
+
 
 /* =========================
    TOUR GRID
@@ -490,6 +537,8 @@ nav{
 }
 
 
+
+
 /* =========================
    RESPONSIVE DESTINATION + TOUR
 ========================= */
@@ -538,6 +587,73 @@ nav{
         width: 100%;
         text-align: center;
     }
+    /* WHY US MOBILE */
+.why-grid{
+    grid-template-columns: 1fr;
+    gap: 22px;
+}
+
+.why-card{
+    padding: 28px;
+}
+
+.why-card h3{
+    font-size: 24px;
+}
+
+.why-card p{
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* GALLERY MOBILE */
+.gallery-grid{
+    grid-template-columns: 1fr;
+    gap: 22px;
+}
+
+.gallery-grid img{
+    height: 260px;
+}
+
+/* ABOUT MOBILE */
+.about{
+    padding: 60px 20px;
+}
+
+.about-content h2{
+    font-size: 36px;
+}
+
+.about-content p{
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* CONTACT MOBILE */
+.contact{
+    padding: 55px 20px 45px;
+}
+
+.contact h2{
+    font-size: 42px;
+    margin-bottom: 18px;
+}
+
+.contact p{
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+/* FLOATING WHATSAPP MOBILE */
+.floating-whatsapp{
+    right: 16px;
+    bottom: 16px;
+    padding: 13px 20px;
+    font-size: 15px;
+}
 }
 
 /* =========================
@@ -944,6 +1060,33 @@ footer p{
     font-size: 15px;
 }
 
+.contact{
+    padding: 90px 20px 40px;
+    min-height: auto;
+}
+
+.contact h2{
+    font-size: 42px;
+    line-height: 1.1;
+    margin-bottom: 22px;
+}
+
+.contact p{
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.faq-section{
+    padding: 45px 6%;
+}
+
+.faq-section h2{
+    font-size: 38px;
+    line-height: 1.15;
+}
+
 }
 
 /* =========================
@@ -1325,13 +1468,17 @@ footer p{
 ========================= */
 
 .faq-section{
-    padding: 70px 8%;
+    padding: 35px 6% 60px;
     background:#f8f5f0;
 }
 
 .faq-container{
     max-width:900px;
     margin:auto;
+}
+
+.faq-section .section-header{
+    margin-bottom: 35px;
 }
 
 .faq-item{
