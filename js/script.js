@@ -13,20 +13,20 @@ hamburger.addEventListener('click', () => {
 
 const fadeElements = document.querySelectorAll('.fade-up');
 
-const observer = new IntersectionObserver((entries)=>{
+const fadeObserver = new IntersectionObserver((entries) => {
 
-    entries.forEach(entry=>{
+    entries.forEach(entry => {
 
-        if(entry.isIntersecting){
+        if (entry.isIntersecting) {
             entry.target.classList.add('show');
         }
 
     });
 
-},{
-    threshold:0.15
+}, {
+    threshold: 0.15
 });
 
-fadeElements.forEach(el=>{
-    observer.observe(el);
+fadeElements.forEach(el => {
+    fadeObserver.observe(el);
 });
