@@ -1214,6 +1214,93 @@ footer img{
 }
 
 /* =========================
+   ABOUT STORY PAGE
+========================= */
+
+.about-story{
+    padding: 90px 8%;
+    background: #f8f5f0;
+}
+
+.story-container{
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.story-text p{
+    font-size: 18px;
+    line-height: 1.9;
+    color: #666;
+    margin-bottom: 22px;
+}
+
+.story-image img{
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 28px;
+    box-shadow: 0 18px 45px rgba(0,0,0,0.12);
+}
+
+
+/* =========================
+   ABOUT EXPERIENCE
+========================= */
+
+.about-experience{
+    padding: 90px 8%;
+    background: #ffffff;
+}
+
+.experience-grid{
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 26px;
+}
+
+.experience-card{
+    background: #f8f5f0;
+    padding: 35px 28px;
+    border-radius: 24px;
+    text-align: center;
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.05);
+
+    transition: 0.35s ease;
+}
+
+.experience-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.experience-card i{
+    font-size: 34px;
+    color: #b48a5a;
+    margin-bottom: 20px;
+}
+
+.experience-card h3{
+    font-size: 22px;
+    color: #1d3527;
+    margin-bottom: 14px;
+}
+
+.experience-card p{
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666;
+}
+
+/* =========================
    RESPONSIVE - TABLET
 ========================= */
 
@@ -1569,4 +1656,93 @@ footer img{
     .faq-item p{
         font-size: 15px;
     }
+
+    /* ABOUT PAGE MOBILE */
+
+.about-story{
+    padding: 65px 6%;
+}
+
+.about-story .section-header h2{
+    font-size: 32px;
+    line-height: 1.2;
+    max-width: 280px;
+    margin: 0 auto 20px;
+}
+
+.story-container{
+    grid-template-columns: 1fr;
+    gap: 35px;
+}
+
+.story-container{
+    gap: 25px;
+}
+
+.story-text p{
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.story-image img{
+    height: 330px;
+    border-radius: 22px;
+}
+
+.story-text{
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+.story-text p{
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
+.about-experience{
+    padding: 65px 6%;
+}
+
+.experience-grid{
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.experience-card{
+    padding: 30px 24px;
+}
+
+.experience-card h3{
+    font-size: 22px;
+}
+
+.experience-card p{
+    font-size: 15px;
+}
+/* ABOUT HERO MOBILE FIX */
+
+.page-header{
+    height: 65vh;
+    padding: 40px 6%;
+}
+
+.page-header h2{
+    font-size: 38px;
+    line-height: 1.15;
+    margin-bottom: 22px;
+}
+
+.page-header p{
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 340px;
+    margin: 0 auto;
+}
+
+.page-header .section-subtitle{
+    font-size: 13px;
+    letter-spacing: 3px;
+}
 }
