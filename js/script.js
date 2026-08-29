@@ -175,3 +175,139 @@ document.addEventListener("DOMContentLoaded", () => {
       new Date().getFullYear();
   }
 });
+
+/* =========================================================
+   UBUD ODYSSEY — WHATSAPP CONVERSION TRACKING
+   GA4: G-KZEE7SNSSL
+   Event: whatsapp_click
+   ========================================================= */
+
+(function () {
+
+  const MEASUREMENT_ID = 'G-KZEE7SNSSL';
+
+  // =========================
+  // GOOGLE ANALYTICS
+  // =========================
+
+  window.dataLayer = window.dataLayer || [];
+
+  window.gtag = window.gtag || function () {
+    window.dataLayer.push(arguments);
+  };
+
+  const existingGoogleTag = document.querySelector(
+    'script[src*="googletagmanager.com/gtag/js?id=' + MEASUREMENT_ID + '"]'
+  );
+
+  if (!existingGoogleTag) {
+
+    const googleTag = document.createElement('script');
+
+    googleTag.async = true;
+
+    googleTag.src =
+      'https://www.googletagmanager.com/gtag/js?id=' +
+      MEASUREMENT_ID;
+
+    document.head.appendChild(googleTag);
+
+    gtag('js', new Date());
+
+    gtag('config', MEASUREMENT_ID);
+
+  }
+
+
+  // =========================
+  // SEND WHATSAPP EVENT
+  // =========================
+
+  function sendWhatsAppEvent(source, linkUrl, linkText) {
+
+    if (typeof window.gtag !== 'function') return;
+
+    gtag('event', 'whatsapp_click', {
+
+      source: source || 'website',
+
+      link_url: linkUrl || '',
+
+      link_text:
+        (linkText || '')
+        .trim()
+        .slice(0, 100),
+
+      page_path:
+        window.location.pathname,
+
+      page_title:
+        document.title
+
+    });
+
+  }
+
+
+  // =========================
+  // TRACK WHATSAPP LINKS
+  // =========================
+
+  document.addEventListener('click', function (event) {
+
+    if (
+      !event.target ||
+      typeof event.target.closest !== 'function'
+    ) {
+      return;
+    }
+
+    const link = event.target.closest(
+      'a[href*="wa.me/"],' +
+      'a[href*="api.whatsapp.com/"],' +
+      'a[href*="whatsapp.com/"]'
+    );
+
+    if (!link) return;
+
+    sendWhatsAppEvent(
+
+      'whatsapp_link',
+
+      link.href,
+
+      link.textContent ||
+      link.getAttribute('aria-label') ||
+      'WhatsApp'
+
+    );
+
+  });
+
+
+  // =========================
+  // TRACK CONTACT FORM
+  // =========================
+
+  document.addEventListener('submit', function (event) {
+
+    if (
+      event.target &&
+      event.target.id === 'contactForm'
+    ) {
+
+      sendWhatsAppEvent(
+
+        'contact_form',
+
+        'https://wa.me/6281337780066',
+
+        'Contact Form to WhatsApp'
+
+      );
+
+    }
+
+  });
+
+})();
