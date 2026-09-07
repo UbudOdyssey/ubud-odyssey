@@ -2709,3 +2709,1649 @@ footer:not(.site-footer) p {
     flex-direction: column;
   }
 }
+
+/* =================================
+   UBUD ODYSSEY - JOURNEY PRICING
+================================= */
+
+.journey-pricing-section {
+    padding: 100px 7%;
+    background: #f8f5f0;
+}
+
+.journey-pricing-header {
+    max-width: 760px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.journey-subtitle {
+    display: block;
+    margin-bottom: 15px;
+
+    color: #b48a5a;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+.journey-pricing-header h2 {
+    margin-bottom: 20px;
+
+    color: #102316;
+
+    font-size: 48px;
+    line-height: 1.15;
+}
+
+.journey-pricing-header p {
+    color: #5f685f;
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* GRID */
+
+.journey-pricing-grid {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* CARD */
+
+.journey-price-card {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 38px 32px;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(16, 35, 22, 0.08);
+
+    border-radius: 4px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.journey-price-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 18px 40px
+        rgba(16, 35, 22, 0.08);
+}
+
+
+/* LOCATION */
+
+.journey-location {
+    margin-bottom: 16px;
+
+    color: #b48a5a;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+
+/* TITLE */
+
+.journey-price-card h3 {
+    margin-bottom: 12px;
+
+    color: #102316;
+
+    font-size: 26px;
+    line-height: 1.3;
+}
+
+
+/* DURATION */
+
+.journey-duration {
+    margin-bottom: 28px;
+
+    color: #747b74;
+
+    font-size: 14px;
+}
+
+
+/* PRICE */
+
+.journey-price {
+    margin-bottom: 25px;
+
+    display: flex;
+    align-items: baseline;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+.journey-price span {
+    color: #777;
+
+    font-size: 13px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.journey-price strong {
+    color: #102316;
+
+    font-size: 32px;
+}
+
+.journey-price small {
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+/* DESCRIPTION */
+
+.journey-description {
+    flex-grow: 1;
+
+    margin-bottom: 30px;
+
+    color: #616861;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* BUTTON */
+
+.journey-btn {
+    display: inline-block;
+
+    width: 100%;
+
+    padding: 14px 20px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    background: #102316;
+
+    color: #ffffff;
+
+    border-radius: 3px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 0.8px;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+.journey-btn:hover {
+    background: #b48a5a;
+
+    color: #ffffff;
+}
+
+
+/* AIRPORT CARD */
+
+.journey-transfer-card {
+    background: #102316;
+}
+
+.journey-transfer-card h3,
+.journey-transfer-card .journey-price strong {
+    color: #ffffff;
+}
+
+.journey-transfer-card .journey-duration,
+.journey-transfer-card .journey-description,
+.journey-transfer-card .journey-price span,
+.journey-transfer-card .journey-price small {
+    color: rgba(255,255,255,0.7);
+}
+
+.journey-transfer-card .journey-btn {
+    background: #b48a5a;
+}
+
+.journey-transfer-card .journey-btn:hover {
+    background: #ffffff;
+
+    color: #102316;
+}
+
+
+/* EXTRA TIME */
+
+.journey-extra-time {
+    max-width: 1200px;
+
+    margin: 40px auto 0;
+
+    padding: 28px 35px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+
+    background: #102316;
+
+    color: #ffffff;
+}
+
+.journey-extra-time span {
+    color: #b48a5a;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+.journey-extra-time strong {
+    font-size: 22px;
+}
+
+.journey-extra-time p {
+    margin-left: auto;
+
+    color: rgba(255,255,255,0.7);
+
+    font-size: 14px;
+}
+
+
+/* PRICE NOTE */
+
+.journey-price-note {
+    max-width: 950px;
+
+    margin: 30px auto 0;
+
+    text-align: center;
+}
+
+.journey-price-note p {
+    color: #777;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 992px) {
+
+    .journey-pricing-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 650px) {
+
+    .journey-pricing-section {
+        padding: 70px 20px;
+    }
+
+    .journey-pricing-header h2 {
+        font-size: 36px;
+    }
+
+    .journey-pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .journey-price-card {
+        padding: 30px 25px;
+    }
+
+    .journey-extra-time {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+    .journey-extra-time p {
+        margin-left: 0;
+    }
+
+}
+
+/* ================================
+   AIRPORT TRANSFER - WIDE CARD
+================================ */
+
+.journey-transfer-wide {
+    grid-column: 1 / -1;
+
+    display: grid;
+    grid-template-columns: 1.4fr 0.9fr;
+
+    max-width: 1200px;
+
+    background: #102316;
+
+    color: #ffffff;
+
+    overflow: hidden;
+}
+
+
+.journey-transfer-info {
+    padding: 55px 60px;
+}
+
+
+.journey-transfer-info .journey-location {
+    display: block;
+
+    margin-bottom: 25px;
+
+    color: #b48a5a;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+
+.journey-transfer-info h3 {
+    margin-bottom: 20px;
+
+    color: #ffffff;
+
+    font-size: 34px;
+
+    line-height: 1.25;
+}
+
+
+.journey-transfer-info p {
+    max-width: 600px;
+
+    color: rgba(255,255,255,0.72);
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* RIGHT SIDE */
+
+.journey-transfer-price {
+    padding: 55px 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: rgba(255,255,255,0.04);
+
+    border-left: 1px solid rgba(255,255,255,0.1);
+}
+
+
+.transfer-from {
+    margin-bottom: 8px;
+
+    color: #b48a5a;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+
+.journey-transfer-price strong {
+    color: #ffffff;
+
+    font-size: 38px;
+}
+
+
+.journey-transfer-price small {
+    margin-left: 8px;
+
+    color: rgba(255,255,255,0.7);
+
+    font-size: 14px;
+}
+
+
+.journey-transfer-price p {
+    margin: 18px 0 25px;
+
+    color: rgba(255,255,255,0.65);
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+.journey-transfer-btn {
+    display: inline-block;
+
+    padding: 15px 24px;
+
+    background: #b48a5a;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    text-align: center;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+
+.journey-transfer-btn:hover {
+    background: #ffffff;
+
+    color: #102316;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .journey-transfer-wide {
+        grid-template-columns: 1fr;
+    }
+
+    .journey-transfer-info,
+    .journey-transfer-price {
+        padding: 35px 28px;
+    }
+
+    .journey-transfer-price {
+        border-left: none;
+
+        border-top:
+            1px solid rgba(255,255,255,0.1);
+    }
+
+    .journey-transfer-info h3 {
+        font-size: 28px;
+    }
+
+    .journey-transfer-price strong {
+        font-size: 34px;
+    }
+
+}
+
+/* =========================================
+   UBUD PRIVATE JOURNEY
+   UBUD ODYSSEY
+========================================= */
+
+.ubud-tour-page {
+    background: #f8f5f0;
+    color: #1d3527;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.ubud-tour-hero {
+    position: relative;
+
+    min-height: 690px;
+
+    padding: 100px 7% 85px;
+
+    display: flex;
+    align-items: flex-end;
+
+    background-image:
+        url("../img/ubud-tour.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    overflow: hidden;
+}
+
+
+.ubud-tour-hero-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(5, 20, 12, 0.15) 10%,
+            rgba(5, 20, 12, 0.38) 50%,
+            rgba(5, 20, 12, 0.92) 100%
+        );
+}
+
+
+.ubud-tour-hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 850px;
+}
+
+
+.ubud-tour-eyebrow,
+.ubud-tour-section-label {
+    display: block;
+
+    margin-bottom: 16px;
+
+    color: #b48a5a;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+
+.ubud-tour-hero h1 {
+    margin: 0 0 25px;
+
+    max-width: 900px;
+
+    color: #ffffff;
+
+    font-size: clamp(52px, 7vw, 90px);
+
+    line-height: 1.03;
+}
+
+
+.ubud-tour-hero p {
+    max-width: 690px;
+
+    margin: 0 0 35px;
+
+    color: rgba(255,255,255,0.82);
+
+    font-size: 18px;
+
+    line-height: 1.8;
+}
+
+
+.ubud-tour-hero-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+
+.ubud-tour-hero-actions span {
+    color: rgba(255,255,255,0.8);
+
+    font-size: 14px;
+}
+
+
+.ubud-tour-primary-btn {
+    display: inline-block;
+
+    padding: 16px 30px;
+
+    background: #b48a5a;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+
+.ubud-tour-primary-btn:hover {
+    background: #ffffff;
+
+    color: #102316;
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.ubud-tour-intro {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 110px 7%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 90px;
+}
+
+
+.ubud-tour-intro-title h2 {
+    margin: 0;
+
+    color: #102316;
+
+    font-size: 52px;
+
+    line-height: 1.15;
+}
+
+
+.ubud-tour-intro-copy p {
+    margin: 0 0 22px;
+
+    color: #626b64;
+
+    font-size: 17px;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================
+   DETAILS
+========================================= */
+
+.ubud-tour-details {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    background: #102316;
+}
+
+
+.ubud-tour-detail {
+    padding: 36px;
+
+    border-right:
+        1px solid rgba(255,255,255,0.1);
+}
+
+
+.ubud-tour-detail:last-child {
+    border-right: none;
+}
+
+
+.ubud-tour-detail span {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #b48a5a;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+}
+
+
+.ubud-tour-detail strong {
+    color: #ffffff;
+
+    font-size: 18px;
+}
+
+
+/* =========================================
+   FEATURED STOPS
+========================================= */
+
+.ubud-tour-stops {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 120px 7%;
+}
+
+
+.ubud-tour-stops-header {
+    max-width: 700px;
+
+    margin-bottom: 60px;
+}
+
+
+.ubud-tour-stops-header h2 {
+    margin: 0 0 20px;
+
+    color: #102316;
+
+    font-size: 52px;
+
+    line-height: 1.15;
+}
+
+
+.ubud-tour-stops-header p {
+    color: #657066;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+.ubud-tour-stops-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+
+.ubud-stop-card {
+    background: #ffffff;
+
+    overflow: hidden;
+}
+
+
+.ubud-stop-image {
+    width: 100%;
+
+    height: 420px;
+
+    overflow: hidden;
+}
+
+
+.ubud-stop-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+
+.ubud-stop-card:hover img {
+    transform: scale(1.035);
+}
+
+
+.ubud-stop-content {
+    padding: 35px;
+}
+
+
+.ubud-stop-content span {
+    display: block;
+
+    margin-bottom: 15px;
+
+    color: #b48a5a;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+
+.ubud-stop-content h3 {
+    margin: 0 0 15px;
+
+    color: #102316;
+
+    font-size: 28px;
+
+    line-height: 1.25;
+}
+
+
+.ubud-stop-content p {
+    margin: 0;
+
+    color: #667067;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   PRICE
+========================================= */
+
+.ubud-tour-price {
+    max-width: 1200px;
+
+    margin: 0 auto 100px;
+
+    padding: 65px;
+
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 80px;
+
+    background: #ffffff;
+}
+
+
+.ubud-tour-price-row {
+    display: flex;
+
+    align-items: baseline;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+}
+
+
+.ubud-tour-from {
+    color: #b48a5a;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+
+.ubud-tour-price-row strong {
+    color: #102316;
+
+    font-size: 48px;
+
+    line-height: 1;
+}
+
+
+.ubud-tour-price-row small {
+    color: #747b74;
+
+    font-size: 16px;
+}
+
+
+.ubud-tour-price-main > p {
+    color: #737a73;
+
+    font-size: 14px;
+}
+
+
+.ubud-tour-price-copy h3 {
+    margin: 0 0 18px;
+
+    color: #102316;
+
+    font-size: 28px;
+}
+
+
+.ubud-tour-price-copy p {
+    color: #5e685f;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+.ubud-tour-price-copy small {
+    display: block;
+
+    margin-top: 20px;
+
+    color: #858b85;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   ITINERARY
+========================================= */
+
+.ubud-tour-itinerary {
+    max-width: 1050px;
+
+    margin: auto;
+
+    padding: 40px 7% 120px;
+}
+
+
+.ubud-tour-itinerary-header {
+    max-width: 650px;
+
+    margin-bottom: 65px;
+}
+
+
+.ubud-tour-itinerary-header h2 {
+    margin: 0 0 20px;
+
+    color: #102316;
+
+    font-size: 52px;
+
+    line-height: 1.15;
+}
+
+
+.ubud-tour-itinerary-header p {
+    color: #667067;
+
+    line-height: 1.8;
+}
+
+
+.ubud-tour-timeline {
+    border-top: 1px solid #d9d6d0;
+}
+
+
+.ubud-tour-timeline-item {
+    padding: 34px 0;
+
+    display: grid;
+
+    grid-template-columns: 150px 1fr;
+
+    gap: 30px;
+
+    border-bottom:
+        1px solid #d9d6d0;
+}
+
+
+.ubud-tour-time {
+    color: #b48a5a;
+
+    font-size: 18px;
+
+    font-weight: 600;
+}
+
+
+.ubud-tour-timeline-item h3 {
+    margin: 0 0 8px;
+
+    color: #102316;
+
+    font-size: 24px;
+}
+
+
+.ubud-tour-timeline-item p {
+    max-width: 650px;
+
+    margin: 0;
+
+    color: #677068;
+
+    line-height: 1.7;
+}
+
+
+/* FLEXIBLE */
+
+.ubud-tour-flexible {
+    margin-top: 50px;
+
+    padding: 40px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+
+    background: #ebe4da;
+}
+
+
+.ubud-tour-flexible span {
+    color: #b48a5a;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+
+.ubud-tour-flexible h3 {
+    margin: 12px 0 0;
+
+    color: #102316;
+
+    font-size: 26px;
+}
+
+
+.ubud-tour-flexible p {
+    margin: 0;
+
+    color: #616a62;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   INCLUDED
+========================================= */
+
+.ubud-tour-inclusions {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 0 7% 100px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+}
+
+
+.ubud-tour-inclusion-card {
+    padding: 55px;
+
+    background: #ffffff;
+}
+
+
+.ubud-tour-not-included {
+    background: #ebe4da;
+}
+
+
+.ubud-tour-inclusion-card h2 {
+    margin: 0 0 35px;
+
+    color: #102316;
+
+    font-size: 34px;
+}
+
+
+.ubud-tour-inclusion-card ul {
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+}
+
+
+.ubud-tour-inclusion-card li {
+    position: relative;
+
+    padding: 14px 0 14px 30px;
+
+    color: #596259;
+
+    border-bottom:
+        1px solid rgba(16,35,22,0.08);
+}
+
+
+.ubud-tour-inclusion-card li::before {
+    content: "✓";
+
+    position: absolute;
+
+    left: 0;
+
+    color: #b48a5a;
+
+    font-weight: 700;
+}
+
+
+.ubud-tour-not-included li::before {
+    content: "—";
+}
+
+
+/* =========================================
+   EXTRA TIME
+========================================= */
+
+.ubud-tour-extra-time {
+    max-width: 1200px;
+
+    margin: 0 auto 100px;
+
+    padding: 35px 45px;
+
+    display: grid;
+
+    grid-template-columns:
+        0.8fr 1fr 2fr;
+
+    align-items: center;
+
+    gap: 35px;
+
+    background: #102316;
+
+    color: #ffffff;
+}
+
+
+.ubud-tour-extra-time span {
+    color: #b48a5a;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+
+.ubud-tour-extra-time strong {
+    font-size: 26px;
+}
+
+
+.ubud-tour-extra-time p {
+    margin: 0;
+
+    color: rgba(255,255,255,0.72);
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   FINAL CTA
+========================================= */
+
+.ubud-tour-final-cta {
+    padding: 115px 7%;
+
+    text-align: center;
+
+    background: #102316;
+
+    color: #ffffff;
+}
+
+
+.ubud-tour-final-cta h2 {
+    max-width: 760px;
+
+    margin: 0 auto 25px;
+
+    color: #ffffff;
+
+    font-size: 58px;
+
+    line-height: 1.1;
+}
+
+
+.ubud-tour-final-cta p {
+    max-width: 650px;
+
+    margin: 0 auto 35px;
+
+    color: rgba(255,255,255,0.75);
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+.ubud-tour-final-cta small {
+    display: block;
+
+    margin-top: 25px;
+
+    color: rgba(255,255,255,0.55);
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .ubud-tour-intro,
+    .ubud-tour-price,
+    .ubud-tour-flexible {
+        grid-template-columns: 1fr;
+    }
+
+
+    .ubud-tour-details {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .ubud-tour-inclusions {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .ubud-tour-hero {
+        min-height: 620px;
+
+        padding:
+            110px 24px 55px;
+    }
+
+
+    .ubud-tour-hero h1 {
+        font-size: 47px;
+    }
+
+
+    .ubud-tour-hero p {
+        font-size: 16px;
+    }
+
+
+    .ubud-tour-intro {
+        padding:
+            75px 24px;
+
+        gap: 35px;
+    }
+
+
+    .ubud-tour-intro-title h2,
+    .ubud-tour-stops-header h2,
+    .ubud-tour-itinerary-header h2 {
+        font-size: 38px;
+    }
+
+
+    .ubud-tour-details {
+        grid-template-columns: 1fr;
+    }
+
+
+    .ubud-tour-detail {
+        border-right: none;
+
+        border-bottom:
+            1px solid rgba(255,255,255,0.1);
+    }
+
+
+    .ubud-tour-stops {
+        padding:
+            80px 20px;
+    }
+
+
+    .ubud-tour-stops-grid {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    .ubud-stop-image {
+        height: 320px;
+    }
+
+
+    .ubud-tour-price {
+        margin:
+            0 20px 80px;
+
+        padding:
+            35px 28px;
+
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+
+    .ubud-tour-price-row strong {
+        font-size: 38px;
+    }
+
+
+    .ubud-tour-itinerary {
+        padding:
+            20px 24px 80px;
+    }
+
+
+    .ubud-tour-timeline-item {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+    }
+
+
+    .ubud-tour-flexible {
+        padding: 30px;
+
+        gap: 25px;
+    }
+
+
+    .ubud-tour-inclusions {
+        padding:
+            0 20px 70px;
+    }
+
+
+    .ubud-tour-inclusion-card {
+        padding: 35px 28px;
+    }
+
+
+    .ubud-tour-extra-time {
+        margin:
+            0 20px 70px;
+
+        padding: 30px;
+
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+
+    .ubud-tour-final-cta {
+        padding:
+            85px 24px;
+    }
+
+
+    .ubud-tour-final-cta h2 {
+        font-size: 42px;
+    }
+
+}
+
+/* ===============================
+   KINTAMANI FINAL CTA
+================================ */
+
+.kintamani-final-cta {
+    padding: 85px 7% 90px;
+}
+
+.kintamani-final-cta h2 {
+    max-width: 900px;
+    margin: 0 auto 22px;
+
+    font-size: 52px;
+    line-height: 1.15;
+}
+
+.kintamani-final-cta > p {
+    max-width: 760px;
+    margin: 0 auto 32px;
+
+    line-height: 1.8;
+}
+
+.kintamani-final-cta a {
+    margin-top: 5px;
+}
+
+@media (max-width: 650px) {
+
+    .kintamani-final-cta {
+        padding: 70px 24px;
+    }
+
+    .kintamani-final-cta h2 {
+        font-size: 38px;
+    }
+
+}
+
+/* ===============================
+   SOUTH BALI FINAL CTA
+================================ */
+
+.south-final-cta {
+    padding: 85px 7% 90px;
+}
+
+.south-final-cta h2 {
+    max-width: 900px;
+    margin: 0 auto 22px;
+
+    font-size: 52px;
+    line-height: 1.15;
+}
+
+.south-final-cta > p {
+    max-width: 760px;
+    margin: 0 auto 32px;
+
+    line-height: 1.8;
+}
+
+@media (max-width: 650px) {
+
+    .south-final-cta {
+        padding: 70px 24px;
+    }
+
+    .south-final-cta h2 {
+        font-size: 38px;
+    }
+
+}
+
+/* ===============================
+   JATILUWIH FINAL CTA
+================================ */
+
+.jatiluwih-final-cta {
+    padding: 85px 7% 90px;
+}
+
+.jatiluwih-final-cta h2 {
+    max-width: 900px;
+    margin: 0 auto 22px;
+
+    font-size: 52px;
+    line-height: 1.15;
+}
+
+.jatiluwih-final-cta > p {
+    max-width: 760px;
+    margin: 0 auto 32px;
+
+    line-height: 1.8;
+}
+
+
+@media (max-width: 650px) {
+
+    .jatiluwih-final-cta {
+        padding: 70px 24px;
+    }
+
+    .jatiluwih-final-cta h2 {
+        font-size: 38px;
+    }
+
+}
+
+/* ===============================
+   EAST BALI FINAL CTA
+================================ */
+
+.east-final-cta {
+    padding: 85px 7% 90px;
+}
+
+.east-final-cta h2 {
+    max-width: 900px;
+    margin: 0 auto 22px;
+
+    font-size: 52px;
+    line-height: 1.15;
+}
+
+.east-final-cta > p {
+    max-width: 760px;
+    margin: 0 auto 32px;
+
+    line-height: 1.8;
+}
+
+
+@media (max-width: 650px) {
+
+    .east-final-cta {
+        padding: 70px 24px;
+    }
+
+    .east-final-cta h2 {
+        font-size: 38px;
+    }
+
+}
+
+/* ===============================
+   NORTH BALI FINAL CTA
+================================ */
+
+.north-final-cta {
+    padding: 85px 7% 90px;
+}
+
+.north-final-cta h2 {
+    max-width: 900px;
+    margin: 0 auto 22px;
+
+    font-size: 52px;
+    line-height: 1.15;
+}
+
+.north-final-cta > p {
+    max-width: 760px;
+    margin: 0 auto 32px;
+
+    line-height: 1.8;
+}
+
+
+@media (max-width: 650px) {
+
+    .north-final-cta {
+        padding: 70px 24px;
+    }
+
+    .north-final-cta h2 {
+        font-size: 38px;
+    }
+
+}
