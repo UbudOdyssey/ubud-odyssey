@@ -65,6 +65,26 @@
     gtag('config', 'AW-18489880647');
   </script>
 
+  <!-- Google Ads Contact conversion -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+
+  gtag('event', 'conversion', {
+    'send_to': 'AW-18489880647/9KU6COu6_o0dEMfg1PBE',
+    'value': 1.0,
+    'currency': 'IDR',
+    'event_callback': callback
+  });
+
+  return false;
+}
+</script>
+
   <!-- Structured Data -->
   <script type="application/ld+json">
   {
@@ -116,7 +136,7 @@
 
     <a
       class="nav-cta"
-      href="https://wa.me/6285879071486?text=Hello%20Ubud%20Odyssey%2C%20I%20would%20like%20to%20plan%20a%20private%20Bali%20tour."
+      href="https://wa.me/6285879071486?text=Hello%20Ubud%20Odyssey%2C%20I%20would%20like%20to%20plan%20a%20private%20Bali%20tour." onclick="return gtag_report_conversion(this.href);"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -171,7 +191,7 @@
         </a>
 
         <a
-          href="https://wa.me/6285879071486?text=Hello%20Ubud%20Odyssey%2C%20I%20would%20like%20help%20planning%20my%20Bali%20journey."
+          href="https://wa.me/6285879071486?text=Hello%20Ubud%20Odyssey%2C%20I%20would%20like%20help%20planning%20my%20Bali%20journey." onclick="return gtag_report_conversion(this.href);"
           class="button button-outline"
           target="_blank"
           rel="noopener noreferrer"
@@ -520,7 +540,7 @@
               </a>
 
               <a
-                href="https://wa.me/6285879071486?text=Hello%20Ubud%20Odyssey%2C%20I%20would%20like%20to%20book%20an%20airport%20transfer."
+                href="https://wa.me/6285879071486?text=Hello%20Ubud%20Odyssey%2C%20I%20would%20like%20to%20book%20an%20airport%20transfer." onclick="return gtag_report_conversion(this.href);"
                 class="airport-secondary-link"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -564,7 +584,7 @@
             <h3>ATV Adventure</h3>
             <p>Ride through jungle tracks, villages, rivers, and muddy Bali trails.</p>
             <a
-              href="https://wa.me/6285879071486?text=Hello%20Ubud%20Odyssey%2C%20I%20want%20to%20ask%20about%20ATV%20Adventure."
+              href="https://wa.me/6285879071486?text=Hello%20Ubud%20Odyssey%2C%20I%20want%20to%20ask%20about%20ATV%20Adventure." onclick="return gtag_report_conversion(this.href);"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -588,7 +608,7 @@
             <h3>White Water Rafting</h3>
             <p>Experience Bali's river scenery through a fun guided rafting adventure.</p>
             <a
-              href="https://wa.me/6285879071486?text=Hello%20Ubud%20Odyssey%2C%20I%20want%20to%20ask%20about%20White%20Water%20Rafting."
+              href="https://wa.me/6285879071486?text=Hello%20Ubud%20Odyssey%2C%20I%20want%20to%20ask%20about%20White%20Water%20Rafting." onclick="return gtag_report_conversion(this.href);"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -725,7 +745,7 @@
         </p>
 
         <a
-          href="https://wa.me/6285879071486?text=Hello%20Ubud%20Odyssey%2C%20I%20would%20like%20help%20planning%20a%20private%20Bali%20journey.%0A%0ATravel%20date%3A%0APickup%20area%3A%0ANumber%20of%20guests%3A%0APlaces%20I%20want%20to%20visit%3A"
+          href="https://wa.me/6285879071486?text=Hello%20Ubud%20Odyssey%2C%20I%20would%20like%20help%20planning%20a%20private%20Bali%20journey.%0A%0ATravel%20date%3A%0APickup%20area%3A%0ANumber%20of%20guests%3A%0APlaces%20I%20want%20to%20visit%3A" onclick="return gtag_report_conversion(this.href);"
           class="button button-gold"
           target="_blank"
           rel="noopener noreferrer"
@@ -823,7 +843,7 @@
         <h3>Contact</h3>
         <a href="tel:+6285879071486">+62 858-7907-1486</a>
         <a
-          href="https://wa.me/6285879071486"
+          href="https://wa.me/6285879071486" onclick="return gtag_report_conversion(this.href);"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -841,7 +861,7 @@
 
   <!-- Floating WhatsApp -->
   <a
-    href="https://wa.me/6285879071486?text=Hello%20Ubud%20Odyssey%2C%20I%20would%20like%20to%20ask%20about%20a%20private%20Bali%20tour."
+    href="https://wa.me/6285879071486?text=Hello%20Ubud%20Odyssey%2C%20I%20would%20like%20to%20ask%20about%20a%20private%20Bali%20tour." onclick="return gtag_report_conversion(this.href);"
     class="floating-whatsapp"
     target="_blank"
     rel="noopener noreferrer"

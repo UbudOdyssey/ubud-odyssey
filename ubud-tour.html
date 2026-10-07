@@ -24,6 +24,26 @@ content="Private Bali tours, airport transfers, and custom travel experiences wi
   gtag('config', 'AW-18489880647');
 </script>
 
+<!-- Google Ads Contact conversion -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+
+  gtag('event', 'conversion', {
+    'send_to': 'AW-18489880647/9KU6COu6_o0dEMfg1PBE',
+    'value': 1.0,
+    'currency': 'IDR',
+    'event_callback': callback
+  });
+
+  return false;
+}
+</script>
+
 </head>
 <body>
 
@@ -42,7 +62,7 @@ content="Private Bali tours, airport transfers, and custom travel experiences wi
 
     <a
       class="nav-cta"
-      href="https://wa.me/6285879071486?text=Hello%20Ubud%20Odyssey%2C%20I%20would%20like%20to%20plan%20a%20private%20Bali%20tour."
+      href="https://wa.me/6285879071486?text=Hello%20Ubud%20Odyssey%2C%20I%20would%20like%20to%20plan%20a%20private%20Bali%20tour." onclick="return gtag_report_conversion(this.href);"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -96,7 +116,7 @@ content="Private Bali tours, airport transfers, and custom travel experiences wi
             <div class="ubud-tour-hero-actions">
 
                 <a
-                    href="https://wa.me/6285879071486?text=Hi%20Ubud%20Odyssey%2C%20I%27m%20interested%20in%20the%20Ubud%20Private%20Journey."
+                    href="https://wa.me/6285879071486?text=Hi%20Ubud%20Odyssey%2C%20I%27m%20interested%20in%20the%20Ubud%20Private%20Journey." onclick="return gtag_report_conversion(this.href);"
                     class="ubud-tour-primary-btn"
                     target="_blank"
                 >
@@ -785,7 +805,7 @@ content="Private Bali tours, airport transfers, and custom travel experiences wi
 
 
         <a
-            href="https://wa.me/6285879071486?text=Hi%20Ubud%20Odyssey%2C%20I%27d%20like%20to%20plan%20an%20Ubud%20Private%20Journey.%20My%20travel%20date%20is%3A"
+            href="https://wa.me/6285879071486?text=Hi%20Ubud%20Odyssey%2C%20I%27d%20like%20to%20plan%20an%20Ubud%20Private%20Journey.%20My%20travel%20date%20is%3A" onclick="return gtag_report_conversion(this.href);"
             target="_blank"
             class="ubud-tour-primary-btn"
         >
